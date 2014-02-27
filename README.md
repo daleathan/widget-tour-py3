@@ -18,6 +18,18 @@ and 'common' contain general-purpuse functions.
 
 These files are distributed under the licence "please help yourself" :-)
 
+Created by
+
+Francesco Bochicchio
+
+https://mail.python.org/pipermail/tkinter-discuss/2009-August/002044.html
+	In case you need more examples of how to use tk widgets with python, have a
+look at this suite of the programs that I wrote some time ago (code is a bit
+old but still working with latest python versions):
+
+     http://tkinter.unpy.net/wiki/A_tour_of_Tkinter_widgets
+
+
 [ITALIANO]
 Ciao.  
 
