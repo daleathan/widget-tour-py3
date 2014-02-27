@@ -1,3 +1,23 @@
+[ENGLISH]
+Hello,
+
+I wrote these demo programs in the summer of 2000, when I needed some practice with 
+python+Tkinter for later work. Rather than inventing new demos, I choose to duplicate
+the standard demo suite that comes with Tcl/Tk distribution. I got 80% of the job done 
+before the summer vacation run out: enogh for my purpose, so I never completed them. 
+
+More recently, I decided to port these scipts to python3, to get a direct feeling of how much effort 
+such a porting takes. I made it in an afternoon: very few print, but mant backticks (I was fond of 
+them back in 2000), several apply (it was before * and ** function arguments) and also some 
+changes in Tkinter (now tkinter ) modules due to the standardized name convention in python
+standard library.  
+
+The main module of this program is widget.py. It will display a main window
+to select and run the various demo. Each demo is a single module.  The modules 'infrastructure' 
+and 'common' contain general-purpuse functions. 
+
+These files are distributed under the licence "please help yourself" :-)
+
 [ITALIANO]
 Ciao.  
 
@@ -21,23 +41,3 @@ I moduli 'infrastructure' e 'common' contengono funzioni e classi
 utilizzati da tutti i demo.
 
 Questi file sono distribuiti sotto la licenza "serviti pure" :-)
-
-[ENGLISH]
-Hello,
-
-I wrote these demo programs in the summer of 2000, when I needed some practice with 
-python+Tkinter for later work. Rather than inventing new demos, I choose to duplicate
-the standard demo suite that comes with Tcl/Tk distribution. I got 80% of the job done 
-before the summer vacation run out: enogh for my purpose, so I never completed them. 
-
-More recently, I decided to port these scipts to python3, to get a direct feeling of how much effort 
-such a porting takes. I made it in an afternoon: very few print, but mant backticks (I was fond of 
-them back in 2000), several apply (it was before * and ** function arguments) and also some 
-changes in Tkinter (now tkinter ) modules due to the standardized name convention in python
-standard library.  
-
-The main module of this program is widget.py. It will display a main window
-to select and run the various demo. Each demo is a single module.  The modules 'infrastructure' 
-and 'common' contain general-purpuse functions. 
-
-These files are distributed under the licence "please help yourself" :-)
