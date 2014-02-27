@@ -22,6 +22,8 @@ Created by
 
 Francesco Bochicchio
 
+https://mail.python.org/pipermail/tkinter-discuss/2009-July/001999.html
+
 https://mail.python.org/pipermail/tkinter-discuss/2009-August/002044.html
 	In case you need more examples of how to use tk widgets with python, have a
 look at this suite of the programs that I wrote some time ago (code is a bit
