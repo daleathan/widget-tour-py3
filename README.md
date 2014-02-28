@@ -5,6 +5,7 @@
 Duplication of the standard demo suite that comes with Tcl/Tk distribution.
 
 Quick start:
+
 	$ python widget.py
 
 ## FEATURES
