@@ -12,7 +12,7 @@ Quick start:
 
 ## DOCUMENTATION
 
-### Wiki wiki
+### Wiki
 
 Visit the wiki to see screenshots of each of the examples.
 
