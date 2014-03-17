@@ -8,7 +8,7 @@ from canvasplot import CanvasPlot
 class EmbedTextDemo(DemoWindow):
     """A class demoing a text widget embedding other widgets"""
     def __init__(self):
-        DemoWindow.__init__(self, '', demo_path('embedtext.py') )
+        DemoWindow.__init__(self, '', demo_path('twind.py') )
 
         frame = Frame(self); frame.pack(expand=Y, fill=BOTH )
         self.frame=frame

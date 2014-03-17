@@ -11,7 +11,7 @@ class FormEntryDemo (DemoWindow ):
         the various entries and use tabs to move circularly between
         the entries."""
 
-        DemoWindow.__init__(self, l, 'entry3.py')
+        DemoWindow.__init__(self, l, 'form.py')
 
         frame = Frame(self);frame.pack( expand=YES, fill=X)
 

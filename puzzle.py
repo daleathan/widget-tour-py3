@@ -53,7 +53,7 @@ class Puzzle15( infrastructure.DemoWindow ):
         will slide over the space.  Continue this until the pieces are
         arranged in numerical order from upper-left to lower-right."""
 
-        infrastructure.DemoWindow.__init__(self, l, 'puzzle15.py' )
+        infrastructure.DemoWindow.__init__(self, l, 'puzzle.py' )
 
         # create the buttons container
         frame = Frame(self, relief=SUNKEN, border=2,

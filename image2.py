@@ -14,7 +14,7 @@ class ImageIFDemo( DemoWindow ):
         to load the directory into the listbox.
         Then double-click on a file name in the listbox to see that image.
         """
-        DemoWindow.__init__(self,l,demo_path('imageif.py'))
+        DemoWindow.__init__(self,l,demo_path('image2.py'))
 
         frame=Frame(self);frame.pack(side=TOP,expand=YES,fill=BOTH)
         self.frame = frame

@@ -1,5 +1,5 @@
 ##
-# --- menus.py
+# --- menu.py
 # A demo of menus using python/tk
 #
 
@@ -61,7 +61,7 @@ class MenuDemo( DemoWindow ):
         typing the accelerator. The rightmost menu can be torn
         off into a palette by selecting the first item in the menu.
         """ % POST_KEY )
-        DemoWindow.__init__(self,l, demo_path('menus.py'))
+        DemoWindow.__init__(self,l, demo_path('menu.py'))
 
 
     def hook_create_menubar(self):
