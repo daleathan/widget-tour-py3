@@ -38,6 +38,9 @@ if you get an error message, `tkinter` is *NOT* installed;
 
 These files are distributed under the licence "please help yourself" :-)
 
+## Tk Demo
+http://core.tcl.tk/tk/tree?ci=tip&name=library/demos
+
 ## History
 
 ### [ENGLISH]
