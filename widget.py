@@ -2,6 +2,7 @@
 # The 'main module' of the widget-demo 
 #
 from tkinter import *
+from tkinter import ttk
 import sys
 import os
 
@@ -17,57 +18,86 @@ from common import *
 #
 demos = [ ("Labels, buttons, checkbuttons, and radiobuttons", None ),
           ('Labels (text and bitmaps)', 'label' ),
+          ('Labels and UNICODE text', 'unicodeout' ),
           ('Buttons', 'buttons' ),
-          ( 'Checkbuttons(select any of a group)','checkbuttons'),
-          ( 'Radiobuttons(select one of a group)','radiobuttons'),
-          ( 'A 15-puzzle game made out of buttons','puzzle15'),
-          ( 'Iconic buttons that use pixmaps','iconbuttons'),
-          ( 'Two labels displaying image-if','image1'),
-          ( 'A simple user interface for viewing images','imageif'),
-
-          ('Listboxes', None ),
-          ('50 states', 'states' ),
+          ('Check-buttons(select any of a group)','checkbuttons'),
+          ('Radio-buttons(select one of a group)','radiobuttons'),
+          ('A 15-puzzle game made out of buttons','puzzle'),
+          ('Iconic buttons that use bitmaps','iconbuttons'),
+          ('Two labels displaying image','image1'),
+          ('A simple user interface for viewing images','image2'),
+          ('Labelled frames', 'labelframe' ),
+          ('The simple Themed Tk widgets', 'ttkbut' ),
+          
+          ('Listboxes and Trees', None ),
+          ('The 50 USA states', 'states' ),
           ('Colors:change the color scheme for the application', 'colors'),
-          ('A collection of famous sayings', 'sayings' ),
-
-          ('Entries', None ),
-          ('Without scrollbars', 'entry1' ),
-          ('With scrollbars', 'entry2' ),
-          ('Simple rolodex-like(?) form', 'entry3' ),
+          ('A collection of famous and infamous sayings', 'sayings' ),
+          ('A multi-column list of countries', 'mclist' ),
+          ('A directory browser tree', 'tree' ),
+          
+          ('Entries, Spin-boxes and Combo-boxes', None ),
+          ('Entries without scrollbars', 'entry1' ),
+          ('Entries with scrollbars', 'entry2' ),
+          ('Validated entries and password fields', 'entry3' ),
+          ('Spin-boxes', 'spin' ),
+          ('Combo-boxes', 'combo' ),
+          ('Simple Rolodex-like form', 'form' ),
 
           ('Text', None ),
           ('Basic editable text', 'simpletext' ),
           ('Text display styles', 'taggedtext' ),
           ('Hypertext(tag bindings)', 'hypertext' ),
-          ('A text widget with embedded windows[TBC]', 'embedtext' ),
+          ('A text widget with embedded windows and other features', 'twind' ),
           ('A search tool build with a text widget', 'textsearch' ),
-
+          ('Peering text widgets', 'textpeer' ),
+          
           ('Canvases', None ),
-          ('The canvas item types [TBC]', 'canvasitems' ),
+          ('The canvas item types', 'canvasitems' ),
           ('A simple 2-D plot', 'canvasplot' ),
           ('Text items in canvases', 'canvastext' ),
           ('An editor for arrowheads on canvas lines', 'arrowhead'),
-          ('A ruler with adjustable table stops [TBF]', 'canvasruler' ),
-          ('A building floor plan [TBD]', 'tbd' ),
+          ('A ruler with adjustable table stops', 'canvasruler' ),
+          ('A building floor plan', 'floor' ),
           ('A simple scrollable canvas', 'canvasscroll' ),
-
-          ('Scales', None ),
-          ('Vertical scale', 'vscale'),
+          ('A simple scrollable canvas', 'cscroll' ),
+          ('A Knight\'s tour of the chess board', 'knightstour' ),
+          
+          ('Scales and Progress Bars', None ),
           ('Horizontal scale', 'hscale' ),
+          ('Vertical scale', 'vscale'),
+          ('Themed scale linked to a label with traces (NEW)', 'ttkscale' ),
+          ('Progress bar', 'ttkprogress' ),
 
-          ('Menus', None ),
-          ('Menus and cascades [TBF]', 'menus'),
-          ('Menubuttons', 'menubuttons' ),
-
+          ('Paned Windows and Notebooks', None ),
+          ('Horizontal paned window', 'paned1' ),
+          ('Vertical paned window', 'paned2' ),
+          ('Themed nested panes', 'ttkpane' ),
+          ('Notebook widget', 'ttknote' ),
+          
+          ('Menus and Toolbars', None ),
+          ('Menus and cascades (sub-menus)', 'menu'),
+          ('Menu-buttons', 'menubuttons' ),
+          ('Themed menu buttons', 'ttkmenu' ),
+          ('toolbar', 'Themed toolbar' ),
+          
           ('Common Dialogs', None ),
           ('Message boxes', 'messagebox' ),
           ('File selection dialog', 'filebox' ),
-
+          ('Color picker', 'clrpick' ),
+          ('Font selection dialog', 'fontchoose' ),
+          
+          ('Animation', None ),
+          ('Animated labels', 'anilabel' ),
+          ('Animated wave', 'aniwave' ),
+          ('Pendulum simulation', 'pendulum' ),
+          ('A celebration of Rube Goldberg', 'goldberg' ),
+          
           ('Miscellaneous', None ),
           ('The builtin bitmaps', 'builtinbitmaps' ),
-          ('Dialogs with local and global grab', 'dialoggrab')
-        ]
-
+          ('A dialog box with a local grab', 'dialog1'),
+          ('A dialog box with a global grab', 'dialog2')
+          ]
 
 
 #
@@ -122,19 +152,19 @@ class DemoMainWindow(Frame):
     def _fill_textarea(self):
     
         #create tags to the text styles
-        self.text.tag_configure('title_tag', font='Helvetica 18 bold',
-                                justify='center',
+        self.text.tag_configure('title_tag', font='Helvetica 10 bold',
+                                justify='left',
                                 spacing1=5, spacing3=5)
         
         self.text.tag_configure('section_tag',
-                                font='Helvetica 16 bold',
+                                font='Helvetica 10 bold',
                                 spacing1=5, spacing3=2)
         
-        self.text.tag_configure('introduction_tag', font='Helvetica 14',
+        self.text.tag_configure('introduction_tag', font='Helvetica 8',
                                 lmargin1='10p', lmargin2='10p',rmargin='10p',
                                 spacing1=5, spacing3=10)
         self.text.tag_configure('demo_tag',
-                                font='Helvetica 14',
+                                font='Helvetica 8',
                                 lmargin1='1c', lmargin2='1c',
                                 foreground='blue', underline=1,
                                 spacing1=3, spacing3=2) 
@@ -181,6 +211,15 @@ class DemoMainWindow(Frame):
         
     def about_callback(self):
         pass
+        '''
+        tk_messageBox -icon info -type ok -title [mc "About Widget Demo"] \
+	    -message [mc "Tk widget demonstration application"] -detail \
+        "[mc "Copyright \u00a9 %s" {1996-1997 Sun Microsystems, Inc.}]
+        [mc "Copyright \u00a9 %s" {1997-2000 Ajuba Solutions, Inc.}]
+        [mc "Copyright \u00a9 %s" {2001-2009 Donal K. Fellows}]
+        [mc "Copyright \u00a9 %s" {2002-2007 Daniel A. Steffen}]"
+        '''
+
 
     def demoenter_callback(self, tag):
         #change the color of the entry
@@ -233,7 +272,4 @@ if __name__ == "__main__":
     TOPLEVEL_TK = Tk()
     dw = DemoMainWindow(TOPLEVEL_TK, "Tk widget tour - the Python version")
     mainloop()
-
-
-
 
