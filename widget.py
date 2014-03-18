@@ -116,7 +116,7 @@ class DemoMainWindow(Frame):
         self._create_statusbar()
         self._fill_textarea()
         self.text['state']='disabled' # no more text insertion
-        self.pack()
+        self.pack(fill=BOTH, expand=1 )
 
     def _create_menu(self):        
         self.mbar = Menu(self, type='menubar')
@@ -134,21 +134,24 @@ class DemoMainWindow(Frame):
                          accelerator='Meta-Q')
 
     def _create_statusbar(self):
-        f = Frame(self); f.pack( side=TOP, expand=YES, fill=X )
+        f = Frame(self)
+        f.pack(side=LEFT, fill=X, expand=1 )
         self.l_sbar = Label(f, relief=SUNKEN, padx=10)
-        self.l_sbar.pack(side=LEFT, expand=YES, fill=X )
+        self.l_sbar.pack(side=LEFT, fill=X, expand=1)
         self.l_rbar = Label(f, width=10, relief=SUNKEN, padx=5)
         self.l_rbar.pack(side=RIGHT )
         
-            
     def _create_textarea(self):
-        f = Frame(self); f.pack(side=TOP,expand=YES, fill=BOTH)
+        f = Frame(self)
+        f.pack(side=TOP,fill=BOTH, expand=1 )
         self.text =  Text(f, relief=SUNKEN, border=2,
                           wrap='word', height=40)
-        self.text.pack(side=LEFT, expand=YES, fill= Y)
-        bar = Scrollbar(f); bar.pack(side=LEFT, fill=Y)
-        self.text['yscrollcommand']=bar.set; bar['command']=self.text.yview
+        self.text.pack(side=LEFT, fill=Y, expand=1)
 
+        bar = Scrollbar(f)
+        bar.pack(side=LEFT, fill=Y)
+        self.text['yscrollcommand']=bar.set
+        bar['command']=self.text.yview
 
     def _fill_textarea(self):
     
@@ -190,7 +193,8 @@ class DemoMainWindow(Frame):
                          "introduction_tag" )
 
         # insert sections and demo titles
-        cnt=0; idx=0;
+        cnt=0
+        idx=0
         for description, file in demos :
             if ( file == None ):
                 self.text.insert(END, description+'\n', 'section_tag' )
@@ -252,7 +256,7 @@ class DemoMainWindow(Frame):
         fp = open(file, 'r')
         code=''
         for l in fp.readlines():
-            code = code + l;
+            code = code + l
 ##        run the code
         
         ## for this to work, all demo modules shall be explicitely
