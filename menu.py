@@ -5,8 +5,8 @@
 
 from tkinter import *
 
-import tkMessageBox
-import tkSimpleDialog
+import tkinter.messagebox as tkMessageBox
+import tkinter.simpledialog as tkSimpleDialog
 
 from infrastructure import DemoWindow, demo_path, callit
 
@@ -132,7 +132,7 @@ class MenuDemo( DemoWindow ):
         self.vars['size'] = StringVar(self)
         self.vars['font'] = StringVar(self)
         for l in (10,14,18,24,32):
-              cb_menu.add_radiobutton(label=`l`+' points',
+              cb_menu.add_radiobutton(label='l'+' points',
                                       variable=self.vars['size'] )
         cb_menu.add_separator()
         for l in ('Roman','Bold','Italic'):
