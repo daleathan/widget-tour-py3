@@ -2,7 +2,7 @@
 # A demonstration of the search capabilities of a text widget
 #
 from tkinter import *
-import tkMessageBox
+import tkinter.messagebox as tkMessageBox
 
 from infrastructure import DemoWindow
 
@@ -88,7 +88,7 @@ class SearchDemo(DemoWindow):
                 desc = "%s:%s" % (str(ex),str(arg))
                 tkMessageBox.showerror(
                     title='I/O Error',
-                    message='Exception:'+`desc`) 
+                    message='Exception:'+'desc') 
 
 
     def do_blink (self):
