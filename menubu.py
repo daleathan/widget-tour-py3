@@ -40,8 +40,8 @@ class MenuButtonsDemo(DemoWindow):
         om_colors['menu'].entryconfigure(len(colors)/3, columnbreak=1)
         om_colors['menu'].entryconfigure(2*len(colors)/3+1, columnbreak=1)      
         om_colors.pack(side=RIGHT,padx=10)
-        print `om_colors`
-        print `om_colors['menu']`
+        print(om_colors)
+        print(om_colors['menu'])
         # set images for color menu options
         self.images=[]
         for i in range(0,len(colors)):
@@ -88,4 +88,4 @@ runDemo = MenuButtonsDemo
 if __name__ == '__main__':
     demo = MenuButtonsDemo()
     mainloop()
-                            
+

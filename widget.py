@@ -10,6 +10,9 @@ import os
 from infrastructure import *
 from common import *
 
+#needed by canvasruler
+TOPLEVEL_TK = None
+
 
 #
 # 
@@ -60,7 +63,7 @@ demos = [ ("Labels, buttons, checkbuttons, and radiobuttons", None ),
           ('An editor for arrowheads on canvas lines', 'arrow'),
           ('A ruler with adjustable table stops', 'ruler' ),
           ('A building floor plan', 'floor' ),
-          ('A simple scrollable canvas', 'cscroll' ),
+          ('A simple scrollable canvas(TBD)', 'cscroll' ),
           ('A Knight\'s tour of the chess board', 'knightstour' ),
           
           ('Scales and Progress Bars', None ),
@@ -268,11 +271,9 @@ class DemoMainWindow(Frame):
         self.destroy()
         sys.exit(0)
 
-#needed by canvasruler
-TOPLEVEL_TK = None
 
 if __name__ == "__main__":
-    global TOPLEVEL_TK
+    #global TOPLEVEL_TK
     TOPLEVEL_TK = Tk()
     dw = DemoMainWindow(TOPLEVEL_TK, "Tk widget tour - the Python version")
     mainloop()

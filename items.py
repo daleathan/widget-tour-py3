@@ -38,17 +38,17 @@ class CanvasItemDemo(DemoWindow):
         width, height = 30,24; unit='c'
         nrow, ncol = 3,2
         dx, dy = width/ncol, height/nrow
-        self.canvas.create_rectangle( 0, 0, `width`+unit, `height`+unit,
+        self.canvas.create_rectangle( 0, 0, 'width'+unit, 'height'+unit,
                                       width=2 )
         for i in range(1,nrow):
             x1,y1,x2,y2 = 0,dy*i,width, dy*i
-            self.canvas.create_line( `x1`+unit, `y1`+unit,
-                                     `x2`+unit, `y2`+unit,
+            self.canvas.create_line( 'x1'+unit, 'y1'+unit,
+                                     'x2'+unit, 'y2'+unit,
                                      width=2 )
         for i in range(1,ncol):
             x1,y1,x2,y2 = dx*i,0,dx*i,height
-            self.canvas.create_line( `x1`+unit, `y1`+unit,
-                                     `x2`+unit, `y2`+unit,
+            self.canvas.create_line( 'x1'+unit, 'y1'+unit,
+                                     'x2'+unit, 'y2'+unit,
                                      width=2 )
 
         # this procedure is getting quite lengthy
@@ -69,7 +69,7 @@ class CanvasItemDemo(DemoWindow):
     def apply_unit(self, list, unit ):
         global u
         u=unit
-        return map( lambda x: `x`+u,
+        return map( lambda x: 'x'+u,
                     list )
 
     #
@@ -78,7 +78,7 @@ class CanvasItemDemo(DemoWindow):
     
     def create_lines(self, x1, y1, dx, dy, unit):
         tx, ty = x1+dx/2, y1+0.1
-        self.canvas.create_text(`tx`+unit,`ty`+unit,
+        self.canvas.create_text('tx'+unit,'ty'+unit,
                                 text='Lines', anchor='n' )
 
         # draw the z-shaped spline
@@ -107,11 +107,7 @@ class CanvasItemDemo(DemoWindow):
     #
 
 
-
-
-
 runDemo = CanvasItemDemo
-
 
 ## ------------------------------------------------------------------------
 
