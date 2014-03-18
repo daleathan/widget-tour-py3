@@ -1,5 +1,7 @@
 
 from tkinter import *
+from tkinter.ttk import *
+
 import infrastructure
 
 
@@ -64,3 +66,4 @@ runDemo = CheckbuttonsDemoWindow
 if __name__ == '__main__' :
     demo = CheckbuttonsDemoWindow()
     mainloop()
+

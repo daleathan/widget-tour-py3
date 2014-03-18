@@ -1,9 +1,10 @@
 ##
-# --- canvas-text.py
+# --- ctext.py
 # A demo of text item capabilities in canvases
 #
 
 from tkinter import *
+from tkinter.ttk import *
 
 from infrastructure import DemoWindow, demo_path
 

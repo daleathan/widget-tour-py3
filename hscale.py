@@ -5,6 +5,7 @@
 #
 
 from tkinter import *
+from tkinter.ttk import *
 
 from infrastructure import DemoWindow,demo_path
 
@@ -53,13 +54,7 @@ runDemo = HorizontalScaleDemo
 
 
 ## ----------------------------------------------------------------------------
-
 if __name__ == '__main__' :
     demo = HorizontalScaleDemo()
     mainloop()
-
-
-
-
-
 

@@ -1,8 +1,9 @@
 #
 # The 'main module' of the widget-demo 
 #
+
 from tkinter import *
-from tkinter import ttk
+from tkinter.ttk import *
 
 import sys
 import os
@@ -98,8 +99,8 @@ demos = [ ("Labels, buttons, checkbuttons, and radiobuttons", None ),
           
           ('Miscellaneous', None ),
           ('The builtin bitmaps', 'bitmap' ),
-          ('A dialog box with a local grab', 'dialog1'),
-          ('A dialog box with a global grab(TBD)', 'dialog2')
+          ('A dialog box with a local grab(Broken)', 'dialog1'),
+          ('A dialog box with a global grab(Broken)', 'dialog2')
           ]
 
 

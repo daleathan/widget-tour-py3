@@ -4,6 +4,7 @@
 #
 
 from tkinter import *
+from tkinter.ttk import *
 
 import tkinter.messagebox as tkMessageBox
 import tkinter.simpledialog as tkSimpleDialog
@@ -247,9 +248,4 @@ runDemo = MenuDemo
 if __name__== '__main__':
     demo = MenuDemo()
     mainloop()
-    
-
-
-
-
 

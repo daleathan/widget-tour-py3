@@ -2,6 +2,7 @@
 import sys, subprocess
 
 from tkinter import *
+from tkinter.ttk import *
 
 from infrastructure import DemoWindow, callit
       
@@ -111,3 +112,4 @@ runDemo = HyperTextDemo
 if __name__ == '__main__':
     demo = HyperTextDemo()
     mainloop()
+

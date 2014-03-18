@@ -6,7 +6,10 @@
 #
 
 from tkinter import *
+from tkinter.ttk import *
+
 from string import *
+
 import os
 import os.path
 
@@ -66,9 +69,9 @@ class SeeCodeWindow( Toplevel ):
         button_frame = Frame( self)
         button_frame.pack( side=TOP, expand=YES, fill=X )
 
-        b_dismiss=Button( button_frame, text='Dismiss',
+        b_dismiss=ttk.Button( button_frame, text='Dismiss',
                           command=self.dismiss_callback )
-        b_restart=Button( button_frame, text='Rerun Demo',
+        b_restart=ttk.Button( button_frame, text='Rerun Demo',
                           command=self.rerun_callback )
         
         for b in b_dismiss, b_restart : b.pack( side=LEFT, padx=3, pady=2,
@@ -167,9 +170,9 @@ class DemoWindow( Toplevel ):
         button_frame.pack( side=BOTTOM, pady='2m', fill=X )
         
         #create the two buttons and pack them
-        dismiss_button = Button(  button_frame, text='Dismiss',
+        dismiss_button = ttk.Button(  button_frame, text='Dismiss',
                                   command=self.dismiss_callback )
-        seecode_button = Button( button_frame, text='See code',
+        seecode_button = ttk.Button( button_frame, text='See code',
                                  command=self.seecode_callback )
 
         for b in (dismiss_button, seecode_button) :

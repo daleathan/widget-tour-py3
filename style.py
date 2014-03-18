@@ -1,5 +1,6 @@
 
 from tkinter import *
+from tkinter.ttk import *
 
 from infrastructure import DemoWindow
 
@@ -157,9 +158,9 @@ class TaggedTextDemo(DemoWindow):
             text.insert(END, txt, tags )
 
         
-
 runDemo = TaggedTextDemo
 
 if __name__ == '__main__':
     demo = TaggedTextDemo()
     mainloop()
+

@@ -5,6 +5,7 @@
 #
 
 from tkinter import *
+from tkinter.ttk import *
 
 from infrastructure import DemoWindow, demo_path
 
@@ -54,9 +55,7 @@ class VerticalScaleDemo(DemoWindow):
 runDemo = VerticalScaleDemo()
 
 ## ----------------------------------------------------------------------------
-
 if __name__ == '__main__' :
     demo = VerticalScaleDemo()
     mainloop()
-
 

@@ -1,10 +1,11 @@
 ##
-# -- canvas-rulr.py
+# -- ruler.py
 # A canvas with a ruler drawn in it.
 # You can add and delete tabs, via drag&drop
 #
 
 from tkinter import *
+from tkinter.ttk import *
 
 from infrastructure import DemoWindow, demo_path
 

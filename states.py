@@ -1,5 +1,6 @@
 
 from tkinter import *
+from tkinter.ttk import *
 
 from infrastructure import DemoWindow
 from common import HScrollList
@@ -41,6 +42,4 @@ runDemo = StatesDemo
 if __name__ == '__main__':
     demo = StatesDemo()
     mainloop()
-
-
 

@@ -3,6 +3,8 @@
 # Demo of python/tk file dialogs
 #
 from tkinter import *
+from tkinter.ttk import *
+
 from tkinter import filedialog 
 
 from infrastructure import DemoWindow, demo_path
@@ -61,4 +63,4 @@ runDemo = FileDialogDemo
 if __name__ == '__main__':
     demo = FileDialogDemo()
     mainloop()
-    
+

@@ -1,5 +1,7 @@
 
 from tkinter import *
+from tkinter.ttk import *
+
 import string
 
 from infrastructure import DemoWindow
@@ -105,3 +107,4 @@ runDemo = ColorsDemo
 if __name__ == '__main__':
     demo = ColorsDemo()
     mainloop()
+

@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter.ttk import *
 
 from infrastructure import DemoWindow, demo_path
 import tkinter.messagebox as messagebox

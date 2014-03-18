@@ -1,7 +1,9 @@
-# --- text-search.py
+# --- search.py
 # A demonstration of the search capabilities of a text widget
 #
 from tkinter import *
+from tkinter.ttk import *
+
 import tkinter.messagebox as tkMessageBox
 
 from infrastructure import DemoWindow
@@ -155,8 +157,4 @@ runDemo = SearchDemo
 if __name__ == '__main__':
     demo = SearchDemo()
     mainloop()
-        
-
-        
-        
 

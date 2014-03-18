@@ -1,5 +1,6 @@
 
 from tkinter import *
+from tkinter.ttk import *
 
 from infrastructure import DemoWindow
 
@@ -39,3 +40,4 @@ runDemo = EntryDemoWindow
 if __name__ == '__main__':
     demo = EntryDemoWindow()
     mainloop()
+

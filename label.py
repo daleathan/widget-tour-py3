@@ -5,6 +5,7 @@
 #
 
 from tkinter import *
+from tkinter.ttk import *
 
 # import common used utilities
 import infrastructure
@@ -58,11 +59,7 @@ def runDemo():
 
 # ============================================================================
 # module self-test code
-
-
 if __name__ == '__main__':
     LabelDemoWindow()
     mainloop()
-
-    
 

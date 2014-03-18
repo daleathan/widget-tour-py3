@@ -1,10 +1,12 @@
 # ---
-# radiobuttons.py
+# radio.py
 #
 # A demo window showing how to use radio-bttons
 #
 
 from tkinter import *
+from tkinter.ttk import *
+
 import infrastructure
 
 
@@ -76,3 +78,4 @@ runDemo = RadiobuttonsDemoWindow
 if __name__ == '__main__' :
     demo = RadiobuttonsDemoWindow()
     mainloop()
+

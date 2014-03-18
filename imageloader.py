@@ -37,15 +37,5 @@ class ImageLoader:
             raise self.__class__.ImageNotFound, (name, type)
         else:
             return img
-        
-
-
-
-
-
-
-
-
-
 
 

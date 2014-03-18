@@ -3,7 +3,7 @@
 # 
 
 from tkinter import *
-
+from tkinter.ttk import *
 
 class HScrollList(Frame):
     """This class combines a Listbox and a scroll list
@@ -70,7 +70,5 @@ class DragCanvas ( Canvas ):
         
         self.move('current', dx, dy )
         self.oldx, self.oldy = x,y
-
-    
 
 

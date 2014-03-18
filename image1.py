@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter.ttk import *
 
 from infrastructure import *
 
@@ -28,3 +29,4 @@ runDemo = ImageDemoWindow
 if __name__ == '__main__' :
     demo = ImageDemoWindow()
     mainloop()
+

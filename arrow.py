@@ -8,8 +8,8 @@
 # canvas items.
 # --
 
-
 from tkinter import *
+from tkinter.ttk import *
 
 from infrastructure import DemoWindow
 from common import DragCanvas

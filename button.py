@@ -5,6 +5,7 @@
 #
 
 from tkinter import *
+from tkinter.ttk import *
 
 # common code used by all demo modules
 import infrastructure
@@ -45,5 +46,4 @@ def runDemo():
 if __name__ == '__main__':
     demo = ButtonsDemoWindow()
     demo.mainloop()
-
 

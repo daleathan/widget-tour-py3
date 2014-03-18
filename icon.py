@@ -1,5 +1,6 @@
 
 from tkinter import *
+from tkinter.ttk import *
 
 from infrastructure import *
 
@@ -61,3 +62,4 @@ runDemo = BitmapButtonsDemo
 if __name__ == '__main__' :
     demo = BitmapButtonsDemo()
     mainloop()
+

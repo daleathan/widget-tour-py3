@@ -1,11 +1,12 @@
-
-# -- canvas-plot.py
+# -- plot.py
 # A simple plot implemented using canvas
 # Note that separate classes are used for the canvas and for its main
 # window, so that thye canvas can also be embedded in the text demo
 #
 
 from tkinter import *
+from tkinter.ttk import *
+
 from infrastructure import DemoWindow
 
 class CanvasPlot(Canvas):
@@ -73,8 +74,6 @@ class CanvasPlot(Canvas):
         self.oldx, self.oldy = x, y
         
 
-    
-
 class PlotDemoWindow(DemoWindow):
 
     def __init__(self ):
@@ -87,15 +86,9 @@ class PlotDemoWindow(DemoWindow):
         self.canvas = CanvasPlot(self)
         self.canvas.pack(side=TOP)
 
-
-
-
 runDemo = PlotDemoWindow
 
 if __name__ == '__main__':
     demo = PlotDemoWindow()
     mainloop()
 
-
-        
-    

@@ -1,5 +1,7 @@
 
 from tkinter import *
+from tkinter.ttk import *
+
 from tkinter.messagebox import showerror
 import glob
 
@@ -75,3 +77,4 @@ runDemo = ImageIFDemo
 if __name__ == '__main__':
     demo = ImageIFDemo()
     mainloop()
+

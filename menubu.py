@@ -1,8 +1,9 @@
 # ---
-# menubuttons.pl : demo of various kind of menu-buttons
+# menubu.py : demo of various kind of menu-buttons
 #
 
 from tkinter import *
+from tkinter.ttk import *
 
 from infrastructure import DemoWindow,demo_path
 

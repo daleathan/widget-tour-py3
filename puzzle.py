@@ -1,5 +1,7 @@
 
 from tkinter import *
+from tkinter.ttk import *
+
 import random
 
 import infrastructure
@@ -120,7 +122,4 @@ def runDemo():
 if __name__ == '__main__' :
     demo = Puzzle15()
     mainloop()
-            
-
-
 

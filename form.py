@@ -1,5 +1,6 @@
 
 from tkinter import *
+from tkinter.ttk import *
 
 from infrastructure import DemoWindow
 
@@ -30,3 +31,4 @@ runDemo = FormEntryDemo
 if __name__ == '__main__':
     demo = FormEntryDemo()
     mainloop()
+

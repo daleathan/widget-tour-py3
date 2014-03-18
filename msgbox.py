@@ -3,6 +3,8 @@
 #
 
 from tkinter import *
+from tkinter.ttk import *
+
 from tkinter.messagebox import Message
 
 from infrastructure import DemoWindow, demo_path

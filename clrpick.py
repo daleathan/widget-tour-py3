@@ -4,6 +4,8 @@
 #
 
 from tkinter import *
+from tkinter.ttk import *
+
 import tkinter.colorchooser as tkColorChooser
 
 from infrastructure import DemoWindow, demo_path
@@ -62,4 +64,3 @@ if __name__ == '__main__':
     demo = ColorChooserDemo()
     mainloop()
 
-                

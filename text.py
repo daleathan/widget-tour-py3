@@ -1,5 +1,6 @@
 
 from tkinter import *
+from tkinter.ttk import *
 
 from infrastructure import DemoWindow
 
@@ -64,16 +65,9 @@ additional lines so that all the information is always visible.
 
         text.insert('0.0', txt )
 
-
-
-
-
-
-
-
-
 runDemo = SimpleTextDemo
 
 if __name__ == '__main__':
     demo = SimpleTextDemo()
     mainloop()
+

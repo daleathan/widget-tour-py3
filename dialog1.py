@@ -1,5 +1,7 @@
 
 from tkinter import *
+from tkinter.ttk import *
+
 import tkinter.simpledialog as tkSimpleDialog
 
 from infrastructure import DemoWindow, demo_path
@@ -78,3 +80,4 @@ runDemo = GrabDemo
 if __name__ == '__main__':
     demo = GrabDemo()
     mainloop()
+
