@@ -4,7 +4,7 @@
 #
 
 from tkinter import *
-import tkColorChooser
+import tkinter.colorchooser as tkColorChooser
 
 from infrastructure import DemoWindow, demo_path
 

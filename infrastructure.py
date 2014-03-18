@@ -108,13 +108,9 @@ class SeeCodeWindow( Toplevel ):
         # has effect ).
         exec("import %s;reload(%s);%s.runDemo()" %
              (TEMPFILE_NAME, TEMPFILE_NAME, TEMPFILE_NAME))
-        
-            
             
         # this fails because identifieres are not anymore recognized
         #exec(new_code+"\nrunDemo()")
-
-        
 
 # ============================================================================
         
@@ -191,8 +187,6 @@ class DemoWindow( Toplevel ):
     def hook_create_statusline(self):
         pass
 
-    
-
     #
     # The callbacks activated by the two buttons
     #
@@ -201,8 +195,6 @@ class DemoWindow( Toplevel ):
 
     def seecode_callback(self):
         ShowCode( self.code_file )
-
-
 
 
 # ============================================================================
@@ -220,10 +212,6 @@ class callit:
     def __call__(self, *ignored):
         self.f( *self.args)
         
-
-
-
-
 # ---------------------------------------------------------------------------
 # module self-test code
 
@@ -233,15 +221,10 @@ class MyDemoWindow(DemoWindow):
         infrastructure module"""
         DemoWindow.__init__(self,l, 'infrastructure.py')
 
-
 _CurrentDemoName = 'MyDemoWindow'
 
 
 if __name__ == '__main__' :
     rundemo('pass')
     _CurrentDemo.mainloop()
-
-
-
-
 

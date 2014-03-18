@@ -3,6 +3,7 @@
 #
 from tkinter import *
 from tkinter import ttk
+
 import sys
 import os
 
@@ -172,7 +173,7 @@ class DemoMainWindow(Frame):
 
         #fill the text area
 
-        self.text.insert(END, "Tk Widget Demonstrations\n\n", 'title_tag' )
+        self.text.insert(END, "Tk Widget Demonstrations - The tkinter Python version\n\n", 'title_tag' )
 
         self.text.insert(END,
                          'This application provides an MMI for several '+
