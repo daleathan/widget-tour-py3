@@ -1,6 +1,6 @@
 
 from tkinter import *
-import tkSimpleDialog
+import tkinter.simpledialog as tkSimpleDialog
 
 from infrastructure import DemoWindow, demo_path
 
