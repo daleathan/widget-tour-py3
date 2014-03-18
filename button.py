@@ -22,7 +22,7 @@ class ButtonsDemoWindow( infrastructure.DemoWindow ):
         invoke the current button."""
 
         
-        infrastructure.DemoWindow.__init__(self, intro, 'buttons.py' )
+        infrastructure.DemoWindow.__init__(self, intro, 'button.py' )
 
         self.frame=Frame(self)
         self.frame.pack(expand=YES, fill=BOTH )

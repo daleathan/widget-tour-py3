@@ -118,7 +118,7 @@ class ScrollCanvasDemo ( DemoWindow ):
         the rectangles, its indices will displayed.
         You can also drag with button 3 to scroll the canvas.
         """
-        DemoWindow.__init__(self,l,demo_path('canvasscroll.py') )
+        DemoWindow.__init__(self,l,demo_path('cscroll.py') )
 
         self.canvas = ScrollableCanvas(self)
         self.canvas.pack(expand='Y', fill='both' )
@@ -132,3 +132,4 @@ runDemo =  ScrollCanvasDemo
 if __name__ == '__main__':
     demo = ScrollCanvasDemo()
     mainloop()
+

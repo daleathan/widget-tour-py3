@@ -1,5 +1,5 @@
 ##
-# --- colorchooser.py
+# --- clrpick.py
 # How to use the color dialog callback with python/tk
 #
 
@@ -14,7 +14,7 @@ class ColorChooserDemo(DemoWindow):
         l = """Press the buttons below to choose the foreground and
         background colors for the widgets in this window."""
 
-        DemoWindow.__init__(self,l,demo_path('colorchooser.py'))
+        DemoWindow.__init__(self,l,demo_path('clrpick.py'))
 
         frame=Frame(self); frame.pack(expand=YES, fill=BOTH)
         button_fg = Button(frame, text='Foreground',

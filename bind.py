@@ -15,7 +15,7 @@ def filexec(fname):
 class HyperTextDemo(DemoWindow):
 
     def __init__(self):
-        DemoWindow.__init__(self, '', 'hypertext.py' )
+        DemoWindow.__init__(self, '', 'bind.py' )
 
         frame = Frame(self); frame.pack(expand=Y, fill=BOTH )
         text=Text(frame, relief=SUNKEN, bd=2, setgrid=1,

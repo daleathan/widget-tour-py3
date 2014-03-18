@@ -18,7 +18,7 @@ class CheckbuttonsDemoWindow( infrastructure.DemoWindow ):
         current values of the variables.
         """
              
-        infrastructure.DemoWindow.__init__(self, intro, 'buttons.py' )
+        infrastructure.DemoWindow.__init__(self, intro, 'check.py' )
 
         self.frame=Frame(self)
         self.frame.pack(expand=YES, fill=BOTH )

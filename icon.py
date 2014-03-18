@@ -15,7 +15,7 @@ class BitmapButtonsDemo ( DemoWindow ):
         bitmap but changes its background color to indicate
         whether or not it is selected."""
 
-        DemoWindow.__init__(self, l, 'iconbuttons.py' )
+        DemoWindow.__init__(self, l, 'icon.py' )
 
         frame = Frame(self); frame.pack( side=TOP, expand=YES, fill=BOTH )
         f_left = Frame(frame); f_left.pack(side=LEFT, expand=YES, fill=BOTH);

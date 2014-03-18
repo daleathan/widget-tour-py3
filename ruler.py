@@ -165,7 +165,7 @@ class RulerDemo(DemoWindow):
         existing tab stops.  If you drag a tab stop far enough
         up or down so that it turns dim, it will be deleted when
         you release the mouse button."""
-        DemoWindow.__init__(self, l, demo_path('canvasruler.py'))
+        DemoWindow.__init__(self, l, demo_path('ruler.py'))
 
         self.canvas = RulerCanvas(self)
         self.canvas.pack(expand=YES, fill=BOTH )
@@ -174,12 +174,9 @@ class RulerDemo(DemoWindow):
 def runDemo():
     RulerDemo()
 
-
 # ----------------------------------------------------------------------------
 
 if __name__ == '__main__':
     demo = RulerDemo()
     mainloop()
-
-
 

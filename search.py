@@ -9,7 +9,7 @@ from infrastructure import DemoWindow
 class SearchDemo(DemoWindow):
 
     def __init__(self):
-        DemoWindow.__init__(self, '', 'textsearch.py' )
+        DemoWindow.__init__(self, '', 'search.py' )
 
         frame = Frame(self); frame.pack(expand=Y, fill=BOTH)
         

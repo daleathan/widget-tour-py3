@@ -12,7 +12,7 @@ class BuiltinBitmapsDemo(DemoWindow):
         along with the names you can use for them in  scripts.
         """
 
-        DemoWindow.__init__(self,l, demo_path('builtinbitmaps.py'))
+        DemoWindow.__init__(self,l, demo_path('bitmap.py'))
 
         frame=Frame(self);frame.pack(expand=YES, fill=BOTH, pady=10)
 
@@ -39,4 +39,3 @@ if __name__ == '__main__':
     demo=BuiltinBitmapsDemo()
     mainloop()
 
-    

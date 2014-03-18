@@ -220,10 +220,6 @@ editing (see above)."""
                 self.itemconfigure(self.text.id, justify=t )
 
 
-
-
-
-
 class CanvasTextDemo(DemoWindow):
 
     def __init__(self):
@@ -242,21 +238,16 @@ class CanvasTextDemo(DemoWindow):
         5. Delete deletes the selection if there is one; otherwise it deletes
            the character just after the insertion cursor.
         """
-        DemoWindow.__init__(self,l, demo_path('canvastext.py') )
+        DemoWindow.__init__(self,l, demo_path('ctext.py') )
         self.canvas = TextDemoCanvas(self)
         self.canvas.pack(fill=BOTH, expand=Y)
 
 
-
 runDemo = CanvasTextDemo
-
 
 ## ----------------------------------------------------------------------------
 
 if __name__ == '__main__':
     demo = CanvasTextDemo()
     mainloop()
-
-
-
 

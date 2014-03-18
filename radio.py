@@ -21,7 +21,7 @@ class RadiobuttonsDemoWindow( infrastructure.DemoWindow ):
         buttons is selected.  Click the \"See Variables\" button to see
         the current values of the variables."""
              
-        infrastructure.DemoWindow.__init__(self, intro, 'radiobuttons.py' )
+        infrastructure.DemoWindow.__init__(self, intro, 'radio.py' )
 
         self.frame=Frame(self)
         self.frame.pack(expand=YES, fill=BOTH )

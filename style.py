@@ -16,7 +16,7 @@ class TextTag:
 class TaggedTextDemo(DemoWindow):
 
     def __init__(self):
-        DemoWindow.__init__(self, '', 'taggedtext.py' )
+        DemoWindow.__init__(self, '', 'style.py' )
 
         frame = Frame(self); frame.pack(expand=Y, fill=BOTH )
         text=Text(frame, relief=SUNKEN, bd=2, setgrid=1, height=35,

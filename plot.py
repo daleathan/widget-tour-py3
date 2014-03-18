@@ -82,7 +82,7 @@ class PlotDemoWindow(DemoWindow):
         simple 2-dimensional plot.  You can doctor the data by
         dragging any of the points with mouse button 1."""
 
-        DemoWindow.__init__(self,l, 'canvasplot.py')
+        DemoWindow.__init__(self,l, 'plot.py')
 
         self.canvas = CanvasPlot(self)
         self.canvas.pack(side=TOP)

@@ -18,7 +18,7 @@ class CanvasItemDemo(DemoWindow):
              Button-3 drag: strokes out area.       
              Ctrl+f:        prints items under area. 
         """
-        DemoWindow.__init__(self,l, 'canvasitems.py' )
+        DemoWindow.__init__(self,l, 'items.py' )
 
         #create the canvas and the scroll bars
         frame = Frame(self); frame.pack(expand=YES, fill=BOTH )

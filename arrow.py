@@ -388,11 +388,6 @@ class ArrowHeadCanvas( DragCanvas ):
         # re-draw other elements affected by width change
         self.draw_arrow_head_controls()
 
-        
-
-
-
-
 
 
 class ArrowHeadDemo (DemoWindow):
@@ -407,7 +402,7 @@ class ArrowHeadDemo (DemoWindow):
         you'd enter them for a canvas line item
         """
 
-        DemoWindow.__init__(self,l,'arrowhead.py' )
+        DemoWindow.__init__(self,l,'arrow.py' )
         
         self.canvas = ArrowHeadCanvas(self, relief=SUNKEN, border=2,
                              height=350, width=450)
@@ -416,8 +411,6 @@ class ArrowHeadDemo (DemoWindow):
 
 #entry point for widget main module        
 runDemo = ArrowHeadDemo
-
-
     
 ## ====================================================================
 if __name__ == '__main__':

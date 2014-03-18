@@ -16,7 +16,7 @@ class MenuButtonsDemo(DemoWindow):
         directly below this text; one is just a standard menu and
         the other is a 16-color palette.
         """
-        DemoWindow.__init__(self,l,demo_path('menubuttons.py'))
+        DemoWindow.__init__(self,l,demo_path('menubu.py'))
 
         frame= Frame(self);frame.pack( expand=YES, fill=BOTH )
         frame.rowconfigure(1,weight=1, pad=120)

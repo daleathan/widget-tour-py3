@@ -6,7 +6,7 @@ from infrastructure import DemoWindow
 class SimpleTextDemo(DemoWindow):
 
     def __init__(self):
-        DemoWindow.__init__(self, '', 'simpletext.py' )
+        DemoWindow.__init__(self, '', 'text.py' )
 
         frame = Frame(self); frame.pack(expand=Y, fill=BOTH )
         text=Text(frame, relief=SUNKEN, bd=2, setgrid=1, height=35);

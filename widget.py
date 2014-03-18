@@ -20,11 +20,11 @@ from common import *
 demos = [ ("Labels, buttons, checkbuttons, and radiobuttons", None ),
           ('Labels (text and bitmaps)', 'label' ),
           ('Labels and UNICODE text', 'unicodeout' ),
-          ('Buttons', 'buttons' ),
-          ('Check-buttons(select any of a group)','checkbuttons'),
-          ('Radio-buttons(select one of a group)','radiobuttons'),
+          ('Buttons', 'button' ),
+          ('Check-buttons(select any of a group)','check'),
+          ('Radio-buttons(select one of a group)','radio'),
           ('A 15-puzzle game made out of buttons','puzzle'),
-          ('Iconic buttons that use bitmaps','iconbuttons'),
+          ('Iconic buttons that use bitmaps','icon'),
           ('Two labels displaying image','image1'),
           ('A simple user interface for viewing images','image2'),
           ('Labelled frames', 'labelframe' ),
@@ -46,21 +46,20 @@ demos = [ ("Labels, buttons, checkbuttons, and radiobuttons", None ),
           ('Simple Rolodex-like form', 'form' ),
 
           ('Text', None ),
-          ('Basic editable text', 'simpletext' ),
-          ('Text display styles', 'taggedtext' ),
-          ('Hypertext(tag bindings)', 'hypertext' ),
+          ('Basic editable text', 'text' ),
+          ('Text display styles', 'style' ),
+          ('Hypertext(tag bindings)', 'bind' ),
           ('A text widget with embedded windows and other features', 'twind' ),
-          ('A search tool build with a text widget', 'textsearch' ),
+          ('A search tool build with a text widget', 'search' ),
           ('Peering text widgets', 'textpeer' ),
           
           ('Canvases', None ),
-          ('The canvas item types', 'canvasitems' ),
-          ('A simple 2-D plot', 'canvasplot' ),
-          ('Text items in canvases', 'canvastext' ),
-          ('An editor for arrowheads on canvas lines', 'arrowhead'),
-          ('A ruler with adjustable table stops', 'canvasruler' ),
+          ('The canvas item types', 'items' ),
+          ('A simple 2-D plot', 'plot' ),
+          ('Text items in canvases', 'ctext' ),
+          ('An editor for arrowheads on canvas lines', 'arrow'),
+          ('A ruler with adjustable table stops', 'ruler' ),
           ('A building floor plan', 'floor' ),
-          ('A simple scrollable canvas', 'canvasscroll' ),
           ('A simple scrollable canvas', 'cscroll' ),
           ('A Knight\'s tour of the chess board', 'knightstour' ),
           
@@ -77,13 +76,13 @@ demos = [ ("Labels, buttons, checkbuttons, and radiobuttons", None ),
           ('Notebook widget', 'ttknote' ),
           
           ('Menus and Toolbars', None ),
-          ('Menus and cascades (sub-menus)', 'menu'),
-          ('Menu-buttons', 'menubuttons' ),
+          ('Menus and cascades (sub-menus)', 'menu' ),
+          ('Menu-buttons', 'menubu' ),
           ('Themed menu buttons', 'ttkmenu' ),
-          ('toolbar', 'Themed toolbar' ),
+          ('Themed toolbar', 'toolbar' ),
           
           ('Common Dialogs', None ),
-          ('Message boxes', 'messagebox' ),
+          ('Message boxes', 'msgbox' ),
           ('File selection dialog', 'filebox' ),
           ('Color picker', 'clrpick' ),
           ('Font selection dialog', 'fontchoose' ),
@@ -95,7 +94,7 @@ demos = [ ("Labels, buttons, checkbuttons, and radiobuttons", None ),
           ('A celebration of Rube Goldberg', 'goldberg' ),
           
           ('Miscellaneous', None ),
-          ('The builtin bitmaps', 'builtinbitmaps' ),
+          ('The builtin bitmaps', 'bitmap' ),
           ('A dialog box with a local grab', 'dialog1'),
           ('A dialog box with a global grab', 'dialog2')
           ]
@@ -149,7 +148,7 @@ class DemoMainWindow(Frame):
         self.text.pack(side=LEFT, fill=Y, expand=1)
 
         bar = Scrollbar(f)
-        bar.pack(side=LEFT, fill=Y)
+        bar.pack(side=LEFT, fill=Y, expand=0)
         self.text['yscrollcommand']=bar.set
         bar['command']=self.text.yview
 
@@ -231,7 +230,7 @@ class DemoMainWindow(Frame):
         self.text.tag_configure( tag,
                                  foreground='red')
         self.text.configure( cursor='hand2')
-        self.l_sbar.configure(text='Run the demo program "'+ str(demos[tag][1]),
+        self.l_sbar.configure(text='Run the "' + str(demos[tag][1]) + '" sample program',
                               justify='left')
 
     def demoleave_callback(self, tag):

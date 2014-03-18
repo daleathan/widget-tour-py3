@@ -1,5 +1,5 @@
 ## ----
-# message-box.py : demo of the message boxes
+# msgbox.py : demo of the message boxes
 #
 
 from tkinter import *
@@ -39,7 +39,7 @@ class MessageBoxDemo(DemoWindow):
         Choose the icon and type option of the message box.
         Then press the \"Message Box\" button to see the message box.
         """
-        DemoWindow.__init__(self,l,demo_path('messagebox.py'))
+        DemoWindow.__init__(self,l,demo_path('msgbox.py'))
 
         frame=Frame(self);frame.pack(expand=Y, fill=BOTH)
 
