@@ -106,7 +106,7 @@ demos = [ ("Labels, buttons, checkbuttons, and radiobuttons", None ),
 
 # The demo main window
 
-class DemoMainWindow(Frame):
+class DemoMainWindow(ttk.Frame):
 
     def __init__(self,master, title):
         Frame.__init__(self, master)
@@ -137,9 +137,9 @@ class DemoMainWindow(Frame):
     def _create_statusbar(self):
         f = Frame(self)
         f.pack(side=LEFT, fill=X, expand=1 )
-        self.l_sbar = Label(f, relief=SUNKEN, padx=10)
+        self.l_sbar = Label(f, relief=SUNKEN)
         self.l_sbar.pack(side=LEFT, fill=X, expand=1)
-        self.l_rbar = Label(f, width=10, relief=SUNKEN, padx=5)
+        self.l_rbar = Label(f, width=10, relief=SUNKEN)
         self.l_rbar.pack(side=RIGHT )
         
     def _create_textarea(self):
